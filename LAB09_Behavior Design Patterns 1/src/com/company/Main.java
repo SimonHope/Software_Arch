@@ -3,6 +3,15 @@ package com.company;
 public class Main {
 
     public static void main(String[] args) {
-	// write your code here
+	    StringPublisher stringPublisher = new StringPublisher("Wakanda Forever***8*/*/*sdf");
+        AlphabetSubscriber alphabetSubscriber = new AlphabetSubscriber();
+        stringPublisher.subscribe(alphabetSubscriber);
+        stringPublisher.subscription();
+
+        NumberSubscriber numberSubscriber = new NumberSubscriber();
+        stringPublisher.subscribe(numberSubscriber);
+
+        SymbolSubscriber symbolSubscriber = new SymbolSubscriber();
+        stringPublisher.subscribe(symbolSubscriber);
     }
 }

@@ -1,7 +1,17 @@
 package com.company;
 
-public class SymbolSubscriber extends StringSubscriber{
-    public void onSubscribe(subscription , flow.Subcription){
+import java.util.concurrent.Flow;
 
+public class SymbolSubscriber extends StringSubscriber{
+
+    @Override
+    public void onSubscribe(Flow.Subscription subscription) {
+        subscription.request(1);
     }
+
+    @Override
+    public void onNext(Object item) {
+        System.out.println(item);
+    }
+
 }
