@@ -21,7 +21,7 @@ public class StringPublisher implements Flow.Publisher{
     }
 
     public void subscription(){
-        Pattern.compile("").matcher(Strpublisher).find();
+
         for(StringSubscription subscription : subs){
             if(subscription.subscriber instanceof AlphabetSubscriber && Pattern.compile("[a-zA-z]").matcher(Strpublisher).find()) {
                 subscription.get(Strpublisher);
@@ -32,7 +32,6 @@ public class StringPublisher implements Flow.Publisher{
             if(subscription.subscriber instanceof SymbolSubscriber && Pattern.compile("[,!@#$%&*()_+=|<>?{}\\\\\\\\[\\\\\\\\]~-]").matcher(Strpublisher).find()) {
                 subscription.get(Strpublisher);
             }
-            subscription.get(Strpublisher);
         }
 
     }

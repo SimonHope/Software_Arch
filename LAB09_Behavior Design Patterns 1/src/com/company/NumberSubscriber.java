@@ -11,7 +11,7 @@ public class NumberSubscriber extends StringSubscriber{
 
     @Override
     public void onNext(Object item) {
-        System.out.println(item);
+        System.out.println("Number"+item);
     }
 
 }
